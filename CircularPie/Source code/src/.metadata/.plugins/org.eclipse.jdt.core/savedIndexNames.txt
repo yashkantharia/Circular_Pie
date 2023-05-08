@@ -1,0 +1,6 @@
+INDEX VERSION 1.132+C:\Users\yashk\OneDrive\Desktop\Pace\Sem 2\Project 1\Code\new\pizza-gh-pages\pizza-gh-pages\src\.metadata\.plugins\org.eclipse.jdt.core
+3688905998.index
+1865797976.index
+3784614003.index
+3011209426.index
+2267766384.index
