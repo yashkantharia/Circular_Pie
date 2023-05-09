@@ -72,5 +72,5 @@ If you want to contribute to this project, follow these steps:
 2. Create a new branch.
 3. Make your changes and commit them.
 4. Push your changes to your forked repository.
-5. Submit a pull request.
+5. Submit a pull request..
 
