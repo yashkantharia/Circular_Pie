@@ -6,6 +6,7 @@ Circular Pie is an online pizza selling website that allows users to customize t
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Prerequisites] (#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -28,24 +29,27 @@ Circular Pie is an online pizza selling website that allows users to customize t
 - Java
 - SQL
 
+## Prerequisites
+- Sublime Text Build 4143
+- Java Eclipse Version: 2023-03 (4.27.0)
+- Oracle Database 21c Express Edition Release 21.0.0.0.0 – Production Version 21.3.0.0.0
+- JDK 1.8.0
+- Github Desktop Version 3.2.1 (x64)
+- Tomcat Server v9.0
+
 ## Installation
 
 To install and run this project on your local machine, follow these steps:
 
 1. Clone this repository.
 ```
-gh repo clone yashkantharia/Circular_Pie
+	git clone https://github.com/your-username/circular-pie.git
 ```
+2.Install the prerequisite software mentioned earlier.
+3. Open the repository in Eclipse
+4. Start the Tomcat server from Eclipse.
+5. Start the SQL server using SQL Plus
 
-2. Install the required dependencies.
-```
-npm install
-```
-
-3. Start the development server.
-```
-npm start
-```
 
 ## Usage
 
