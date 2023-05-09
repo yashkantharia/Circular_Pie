@@ -45,8 +45,7 @@ To install and run this project on your local machine, follow these steps:
 ```
 	git clone https://github.com/your-username/circular-pie.git
 ```
-
-2.Install the prerequisite software mentioned earlier.
+2. Install the prerequisite software mentioned earlier.
 
 3. Open the repository in Eclipse
 
