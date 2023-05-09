@@ -6,7 +6,7 @@ Circular Pie is an online pizza selling website that allows users to customize t
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Prerequisites] (#prerequisites)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
