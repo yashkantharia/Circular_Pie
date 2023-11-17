@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Circular Pie: Order Summary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Existing styles... */
+
+    /* New styles for tracking box and progress bar */
+    .tracking-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid red; /* Red border for the tracking box */
+      text-align: left;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .order-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #FFD700; /* Yellow color for order number */
+      margin-bottom: 10px;
+      position: relative;
+      text-shadow: 1px 1px 1px #000; /* Black shadow for order number */
+    }
+
+    .title-underline {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .pizza-slice {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 90px;
+      height: 60px;
+      background-image: url('https://cdn.pixabay.com/photo/2022/01/19/07/18/pizza-6948995_960_720.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 20px;
+      background-color: white; /* White color for the bar */
+      border: 2px solid red; /* Red border for the bar */
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) inset; /* White shadow inside */
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0;
+      background-color: #FFD700; /* Yellow color for the filled part */
+      animation: fillProgress 4s linear forwards; /* Animation to fill the bar */
+    }
+
+    /* Animation keyframes for filling progress */
+    @keyframes fillProgress {
+      0% { width: 0; }
+      25% { width: 25%; }
+      50% { width: 50%; }
+      75% { width: 75%; }
+      100% { width: 100%; }
+    }
+
+    /* Styles for the Download Invoice button */
+    .download-invoice-btn {
+      background-color: #FFD700;
+      color: white;
+      border: 1px solid #000;
+      padding: 8px 15px; /* Adjusted padding for a smaller button */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px; /* Adjusted font size for a smaller button */
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      border-radius: 5px;
+      font-weight: bold;
+      float: right; /* Positioned to the right */
+    }
+
+    .download-invoice-btn:hover {
+      background-color: #FFC600;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .download-invoice-btn:active {
+      background-color: #FFB500;
+    }
+
+    /* New styles for the progress stages */
+    .progress-stages {
+      display: flex;
+      justify-content: space-between;
+      color: red; /* Red color for the stages */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Existing code for navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index1.html"><span class="flaticon-pizza-1 mr-1"></span>Circular Pie<br><small>One stop shop for your customised pizza!</small></a>
+    </div>
+  </nav>
+
+  <div style="background-image: url(images/bg_1.jpg);height: 900px;">
+    <div style="width:50% ;padding: 8px; height: max(); margin: auto;">
+      <h1 class="mb-3 mt-5 bread order-title">Submit Order</h1>
+      <br>
+      <!-- Replaced existing order container with the tracking box -->
+      <div class="order-container tracking-box" style="height: 250px;">
+        <div class="order-title">Order #45124755
+          <div class="title-underline"></div>
+          <div class="pizza-slice"></div>
+        </div>
+        <!-- Progress stages -->
+        <div class="progress-stages">
+          <div>Preparing</div>
+          <div>Out for Delivery</div>
+          <div>Delivered</div>
+        </div>
+        <div class="order-content">
+          <!-- Progression bar container -->
+          <div class="progress-bar-container">
+            <!-- Progression bar -->
+            <div class="progress-bar">
+              <div class="progress-bar-fill"></div>
+            </div>
+          </div>
+          <!-- Download Invoice button -->
+          <div class="download-invoice-btn">Download Invoice</div>
+          <!-- Rest of the order content goes here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <!-- ... (existing code for scripts) ... -->
+</body>
+</html>
