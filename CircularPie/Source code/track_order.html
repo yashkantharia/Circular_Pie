@@ -171,8 +171,9 @@
               <div class="progress-bar-fill"></div>
             </div>
           </div>
-          <!-- Download Invoice button -->
-          <div class="download-invoice-btn">Download Invoice</div>
+<!-- Download Invoice button -->
+<div class="download-invoice-btn" id="downloadBtn">Download Invoice</div>
+
           <!-- Rest of the order content goes here -->
         </div>
       </div>
@@ -183,6 +184,32 @@
   </footer>
 
   <script src="js/jquery.min.js"></script>
-  <!-- ... (existing code for scripts) ... -->
+  
+
+<script>
+document.getElementById('downloadBtn').addEventListener('click', function() {
+  // Replace 'path/to/your/file.txt' with the actual path to your file
+  var filePath = 'C:/Users/yashk/OneDrive/Desktop/Pace/Sem 2/Project 1/Code/new/pizza-gh-pages/pizza-gh-pages/Invoice.pdf';
+
+  // Create an anchor element
+  var downloadLink = document.createElement('a');
+
+  // Set the href attribute to the file path
+  downloadLink.href = filePath;
+
+  // Set the download attribute with the desired file name
+  downloadLink.download = 'Invoice.pdf';
+
+  // Append the anchor element to the document
+  document.body.appendChild(downloadLink);
+
+  // Trigger a click event on the anchor element to prompt the download
+  downloadLink.click();
+
+  // Remove the anchor element from the document
+  document.body.removeChild(downloadLink);
+});
+</script>
+
 </body>
 </html>
